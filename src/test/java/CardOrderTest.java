@@ -13,7 +13,7 @@ class CardOrderTest {
             SelenideElement form = $("[id=root]");
             form.$("[name]").setValue("Иванов Василий");
             form.$("[name=phone]").setValue("+79876987564");
-            form.$("checkbox__box").click();
+            form.$("span.checkbox__box").click();
             form.$("button[type=button]").click();
             $("p.paragraph.paragraph_theme_alfa-on-white").shouldHave(text("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
         }
